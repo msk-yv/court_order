@@ -1,0 +1,6 @@
+<div>
+  <%= form_tag form_path, remote: true, method: :post do |form|%>
+    <%= text_field_tag :name, @form_data[:name], onkeyup: "javascript: this.form.submit();" %>
+    <%= button_tag 'pay_and_get_result', onkeyup: "javascript: this.form.submit();" %>
+  <% end %>
+</div>

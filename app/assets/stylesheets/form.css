@@ -1,0 +1,28 @@
+.wrapper {
+    width: 70%;
+    border: 4px double red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: auto;
+}
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+.two {
+    grid-column: 2 / 2;
+    grid-row: 1;
+}
+
+.inner_border {
+    border: 1px solid black;
+}
+
+.inputted {
+    color: red;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: larger;
+}
